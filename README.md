@@ -66,10 +66,11 @@ You can find the API documentation at `http://localhost:8080/swagger-ui/index.ht
 - **Method**: POST
 - **Description**: Creates a new amortization schedule based on the provided loan details.
 - **Request Body**: JSON object representing loan details
-    - `principal` (double): Principal amount of the loan.
-    - `annualInterestRate` (double): Annual interest rate for the loan.
-    - `termYears` (int): Term of the loan in years.
-    - `startDate` (string): Start date of the loan in the format "YYYY-MM-DD".
+    - `loanAmount` (BigDecimal): Amount of the loan.
+    - `depositAmount` (BigDecimal): Amount of the deposit (if applicable).
+    - `interestRate` (BigDecimal): Annual interest rate for the loan.
+    - `balloonPayment` (BigDecimal): Amount of the balloon payment (if applicable).
+    - `monthlyPayments` (int): Number of monthly payments.
 - **Response**: Amortization schedule object
 
 ### Get All Amortization Schedules
