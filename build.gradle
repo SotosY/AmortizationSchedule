@@ -27,6 +27,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
+    // OpenAPI and Swagger UI Dependencies
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
